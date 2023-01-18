@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-A graphql api from space x to show rockets and ships.
+An app to show spacex rockets and ships.
 
 ## Technologies
 1. ReactJS
