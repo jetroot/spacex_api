@@ -2,10 +2,13 @@
 
 An app to show spacex rockets and ships.
 
+![alt text](./public/screenshots/pp.png)
+
 ## Technologies
 1. ReactJS
 2. GraphQL 
 3. SpaceX GraphQL APi
+4. Workflow AKA Github Actions
 
 In the project directory, you can run:
 
