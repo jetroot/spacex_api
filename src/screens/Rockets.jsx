@@ -1,3 +1,4 @@
+import React from 'react';
 import { GET_SPACEX_ROCKETS } from '../query';
 import { useState, useEffect } from 'react';
 import { useQuery } from '@apollo/client';
@@ -9,7 +10,6 @@ function Rockets() {
 
     useEffect(() => {
         data && setRockets(data.rockets);
-        console.log(loading)
     }, [rockets, data, loading])
 
   return (
