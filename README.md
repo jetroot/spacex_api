@@ -2,6 +2,8 @@
 
 A graphql api from space x to show rockets and ships.
 
+![alt text](./public/screenshots/pp.png)
+
 ## Technologies
 1. ReactJS
 2. GraphQL 
