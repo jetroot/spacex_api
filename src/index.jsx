@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './screens/Home';
 import Rockets from './screens/Rockets';
 
+// graphql endpoint
 const client = new ApolloClient({
   uri: 'https://api.spacex.land/graphql/',
   cache: new InMemoryCache(),
