@@ -8,6 +8,7 @@ A graphql api from space x to show rockets and ships.
 1. ReactJS
 2. GraphQL 
 3. SpaceX GraphQL APi
+4. Workflow AKA Github Actions
 
 In the project directory, you can run:
 
