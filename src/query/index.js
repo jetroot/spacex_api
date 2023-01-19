@@ -1,5 +1,6 @@
 const { gql } = require("@apollo/client");
 
+// Get space ships query
 export const GET_SPACEX_SHIPS = gql`
     query {
         ships {
@@ -10,6 +11,7 @@ export const GET_SPACEX_SHIPS = gql`
     }
 `;
 
+// Get space rockets query
 export const GET_SPACEX_ROCKETS = gql`
     query {
         rockets {
