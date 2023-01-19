@@ -21,20 +21,14 @@ root.render(
   <React.StrictMode>
       <ApolloProvider client={client}>
           <Router>
-            <Layout>
-              <Routes>
-                <Route path='/' element={
-                  <Suspense fallback={<div>Loading...</div>}>
-                    <Home />
-                  </Suspense>
-                } />
-                <Route path='/rockets' element={
-                  <Suspense fallback={<div>Loading...</div>}>
-                    <Rockets />
-                  </Suspense>
-                } />
-              </Routes>
-            </Layout>
+            <Suspense fallback={<div>Loading...</div>}>
+              <Layout>
+                <Routes>
+                  <Route path='/' element={<Home />} />
+                  <Route path='/rockets' element={<Rockets />} />
+                </Routes>
+              </Layout>
+            </Suspense>
           </Router>
       </ApolloProvider>
   </React.StrictMode>

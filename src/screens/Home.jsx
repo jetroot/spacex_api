@@ -21,7 +21,7 @@ const Home = () => {
         <Header btnLabel={"Rockets"} label="SpaceX Ships" />
         {loading && <h1>Loding...</h1> }
 
-        {!loading && <div className="grid grid-cols-4 max-sm:grid-cols-1 bg-white p-2 gap-4">
+        {!loading && <div className="grid grid-cols-4 max-sm:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 bg-white p-2 gap-4">
             {ships.map((ship, index) => {
                 return <Card 
                 key={index}
