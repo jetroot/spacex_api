@@ -1,7 +1,7 @@
 import { GET_SPACEX_ROCKETS } from '../query';
 import { useState, useEffect } from 'react';
 import { useQuery } from '@apollo/client';
-import Header from '../components/Header';
+const Header = React.lazy(() => import('../components/Header'));
 
 function Rockets() {
     const { loading, error, data } = useQuery(GET_SPACEX_ROCKETS);
@@ -19,7 +19,7 @@ function Rockets() {
 
             {loading && <h1>Loding...</h1> }
         </div>
-        <div className='mt-6 grid grid-cols-2 gap-2'>
+        <div className='max-md:grid-cols-1 mx-6 mt-6 grid grid-cols-2 gap-4'>
         {!loading && rockets.map((rocket, index) => {
             return <div className='bg-slate-100 hover:shadow-lg hover:shadow-slate-200 p-4' key={index}>
                     <div className='flex justify-between w-full'>

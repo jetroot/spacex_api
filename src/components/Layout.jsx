@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from './Navbar'
+const Navbar = React.lazy(() => import('./Navbar'));
 
 const Layout = ({children}) => {
   return (
@@ -17,4 +17,4 @@ const Layout = ({children}) => {
   )
 }
 
-export default Layout
+export default Layout;
